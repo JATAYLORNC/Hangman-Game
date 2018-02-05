@@ -1,8 +1,40 @@
+#backGround {
+    background-image: url("../images/YSikR0E-disney-backgrounds.jpg");
+    background-size: cover;
+}
+
+#titleBar {
+    background: rgba(255, 255, 255, 0);
+    margin: 50px 0;
+}
+
+#tbh1 {
+    font-size: 63px;
+}
+
+
 #ltr0, #ltr1, #ltr2, #ltr3, #ltr4, #ltr5, #ltr6, #ltr7, #ltr8, #ltr9 {
-    padding-right: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 4rem;
+}
 
-} */
+#scoreBoard {
+    position: absolute;
+    left: 2rem;
+    top: 40px;
+    padding-left: 2rem;
+}
 
-aside {
-    margin: 2rem;
+#displayWord {
+    height: 50px;
+    margin-top: 60px;
+    line-height: 50px;
+}
+
+#ltrsGuessed {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    font-size: 2rem;
 }
