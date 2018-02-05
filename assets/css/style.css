@@ -1,3 +1,11 @@
+    @font-face {
+        font-family: 'waltographregular';
+        src: url('fonts/waltograph42-webfont.woff2') format('woff2'),
+             url('fonts/waltograph42-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
 #backGround {
     background-image: url("../images/YSikR0E-disney-backgrounds.jpg");
     background-size: cover;
@@ -5,11 +13,15 @@
 
 #titleBar {
     background: rgba(255, 255, 255, 0);
-    margin: 50px 0;
+    margin: 0 0 50px 0;
 }
 
 #tbh1 {
-    font-size: 63px;
+    font-family: 'waltographregular';
+    font-size: 90px;
+    color: #fff;
+    margin: 0px
+
 }
 
 
@@ -17,6 +29,8 @@
     padding-right: 1rem;
     padding-left: 1rem;
     font-size: 4rem;
+    font-family: 'waltographregular';
+    color:#000;
 }
 
 #scoreBoard {
@@ -24,17 +38,43 @@
     left: 2rem;
     top: 40px;
     padding-left: 2rem;
+    color:#ffffff;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'waltographregular';
+}
+
+p {
+    font-size: 30px;
+    font-family: 'waltographregular';
+    padding-left: 25px;
 }
 
 #displayWord {
     height: 50px;
-    margin-top: 60px;
+    margin-top: 50px;
     line-height: 50px;
 }
 
 #ltrsGuessed {
     position: absolute;
     right: 0;
-    top: 200px;
-    font-size: 2rem;
+    top: 180px;
+    font-size: 36px;
+    font-family: 'waltographregular';
+    color: #ffffff;
+}
+
+#charImage {
+    display: block;
+    margin-top: 0;
+    margin: auto;
+    max-height: 350px;
+    max-width: 350px;
+}
+
+#gmsPlayed, #gmsWon, #gmsLost, #gsCount {
+    padding-left: 10px;
 }

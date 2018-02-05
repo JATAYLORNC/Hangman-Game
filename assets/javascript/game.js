@@ -2,7 +2,8 @@
 
 window.onload = function startGame() {
 
-    var wordArray = ["Pooh", "Piglet", "Eyore", "Lilo", "Stitch", "Cinderella", "Jasmine"];
+    var wordArray = ["Pooh", "Piglet", "Eeyore", "Tigger", "Aladdin", "Genie", "Mickey", "Minnie", "Marie", "Omalley", "Berlioz", 
+    "Toulouse", "Duchess", "Lilo", "Stitch", "Cinderella", "Jasmine"];
 
     var gamesPlayed = 0;
 
@@ -14,10 +15,10 @@ window.onload = function startGame() {
 
     function hangMan() {
 
+        document.getElementById("charImage").src = "assets/images/guesswho.png";
+
     //Use if statement so that game can be played multiple times until all words have been used.
         if (wordArray.length > 0) {
-
-            console.log(wordArray.length);
 
             //initialize array of letters already guessed by user
             var previousGuess = [];
@@ -32,17 +33,14 @@ window.onload = function startGame() {
             var gameWordIndex = Math.floor(Math.random() * wordArray.length);
             var gameWord = wordArray[gameWordIndex];
 
-            console.log (gameWord);
-            console.log(gameWordIndex);
-
             gameWord = gameWord.toLowerCase();
+
+            var imageName = gameWord;
 
             var gameWordArray = gameWord.split("");
 
             //Remove word from array so that it cannot be chosen again for additional games played   
             wordArray.splice(gameWordIndex, 1);
-
-            console.log(wordArray);
 
             //Display game word on screen with letters hidden
             for (i=0; i<gameWord.length; i++) {
@@ -78,8 +76,6 @@ window.onload = function startGame() {
 
                 //assigns the key code to a variable
                 var userKeyCode = Number(event.keyCode);
-
-
 
                 //Make sure key pressed is a letter of the alphabet
                 if (userKeyCode >= 65 && userKeyCode <= 97) {
@@ -134,6 +130,8 @@ window.onload = function startGame() {
 
                 //check to see if all letters in word have been guessed
                 if (correctGuess == gameWord.length) {
+
+                    document.getElementById("charImage").src = "assets/images/" + imageName +".png";
                     
                     //increment wins counter
                     wins = wins + 1;
@@ -153,7 +151,7 @@ window.onload = function startGame() {
 
                     if(gameOver==true) {
 
-                        setTimeout(function() { alert("Congratulations on guessing the word correctly!  Why not play again"); }, 1000);
+                        //setTimeout(function() { alert("Congratulations on guessing the word correctly!  Why not play again"); }, 1000);
 
                         setTimeout(function() {
                             var parent = document.getElementById("displayWord");
@@ -162,13 +160,13 @@ window.onload = function startGame() {
                                 parent.removeChild(child);
                             }
                             document.getElementById("ltrG").innerHTML = "";
-                        }, 3000);
+                        }, 5000);
 
                         restartGame = true;
                     }
 
                     if(restartGame == true) {
-                        setTimeout(hangMan, 3000);
+                        setTimeout(hangMan, 5000);
                     }    
                 }
 
@@ -204,7 +202,7 @@ window.onload = function startGame() {
                             }
                         }
 
-                        setTimeout(function() { alert("Game Over!  Why not try again?"); }, 1000);
+                        // setTimeout(function() { alert("Game Over!  Why not try again?"); }, 1000);
                         
                         setTimeout(function() {
                             var parent = document.getElementById("displayWord");
