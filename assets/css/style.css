@@ -21,6 +21,16 @@
     padding: 30px 0 20px 0;
 }
 
+#start {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: 'waltographregular';
+    font-size: 36px;
+    color: #fff;
+
+}
+
 #tbh1 {
     font-family: 'waltographregular';
     font-size: 90px;
@@ -96,7 +106,12 @@ p {
     #ltrsGuessed {
         margin-left: 40%;
     }
-   
+
+    #start {
+        top: 10%;
+        left: 2%;
+        font-size: 30px;    
+    } 
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) and (min-height: 900px) {
@@ -125,6 +140,11 @@ p {
         padding-top: 10%;
     }
 
+    #start {
+        top: 12%;
+        left: 2%;
+        font-size: 24px;    
+    }
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) and (max-height: 899px) {
@@ -157,6 +177,12 @@ p {
     #pltrG, #ltrG {
         padding-left: 0;
     }
+
+    #start {
+        top: 35%;
+        left: 2%;
+        font-size: 24px;    
+    }
 }
 
 
@@ -180,6 +206,10 @@ p {
 
     #ltrG {
         font-size: 18px;
+    }
+
+    #start {
+        font-size: 24px;    
     }
 
     #backGround {
@@ -213,6 +243,21 @@ p {
         padding-top: 5%;
         margin-left: 0%;
         font-size: 30px;
+    }
+
+    #start {
+        top: 8%;
+        left: 2%;
+        font-size: 24px;    
+    }
+
+    #row-first {
+        height: 60%;
+        padding-top: 5%;
+    }
+
+    #row-second {
+        height: 40%;
     }
     
 
