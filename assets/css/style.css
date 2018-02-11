@@ -3,13 +3,12 @@
         min-height: 100%;
     }
    
-   @font-face {
-        font-family: 'waltographregular';
-        src: url('fonts/waltograph42-webfont.woff2') format('woff2'),
-             url('fonts/waltograph42-webfont.woff') format('woff');
+    @font-face {
+        font-family: 'WaltographRegular';
+            src: url('/assets/fonts/waltograph/23a40698cd1bb84f930b7a0884c134a6/ab260a56f2b852b78f81eac337e0a2fc/WaltographRegular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
-    }
+          }
 
 #backGround {
     background-image: url("../images/YSikR0E-disney-backgrounds.jpg");
@@ -25,14 +24,14 @@
     position: absolute;
     top: 5%;
     left: 5%;
-    font-family: 'waltographregular';
+    font-family: 'waltographRegular';
     font-size: 36px;
     color: #fff;
 
 }
 
 #tbh1 {
-    font-family: 'waltographregular';
+    font-family: 'waltographRegular';
     font-size: 90px;
     color: #fff;
     margin: 0px
@@ -44,7 +43,7 @@
     padding-right: 1rem;
     padding-left: 1rem;
     font-size: 4rem;
-    font-family: 'waltographregular';
+    font-family: 'waltographRegular';
     color:#000;
 }
 
@@ -56,13 +55,13 @@
 
 #scb {
     font-size: 48px;
-    font-family: 'waltographregular';
+    font-family: 'waltographRegular';
     margin-top: 0;
 }
 
 p {
     font-size: 30px;
-    font-family: 'waltographregular';
+    font-family: 'waltographRegular';
     padding-left: 25px;
 }
 
@@ -74,7 +73,7 @@ p {
 
 #ltrsGuessed {
     font-size: 36px;
-    font-family: 'waltographregular';
+    font-family: 'waltographRegular';
     color: #000;
 
     margin-left: 20%;
@@ -190,13 +189,13 @@ p {
 
     #scb {
         font-size: 30px;
-        font-family: 'waltographregular';
+        font-family: 'waltographRegular';
         margin-top: 0;
     }
 
     .pfont {
         font-size: 18px;
-        font-family: 'waltographregular';
+        font-family: 'waltographRegular';
         padding-left: 25px;
     }
 
@@ -223,7 +222,7 @@ p {
     }
     
     #tbh1 {
-        font-family: 'waltographregular';
+        font-family: 'waltographRegular';
         font-size:48px;
         color: #fff;
         margin: 0px
