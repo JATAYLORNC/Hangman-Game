@@ -2,6 +2,12 @@
 
 window.onload = function startGame() {
 
+    $('body').on("click", function() { 
+        $('#dummy').focus(); 
+        console.log("focused")
+    }); 
+    $('#dummy').focus();
+
     var wordArray = ["Pooh", "Piglet", "Eeyore", "Tigger", "Aladdin", "Genie", "Mickey", "Minnie", "Marie", "Omalley", "Berlioz", 
     "Toulouse", "Duchess", "Lilo", "Stitch", "Cinderella", "Jasmine", "Goofy", "Pluto", "Donald", "Daisy", "Bambi", "Thumper", "Flower", "Roo",
     "Kanga", "Rabbit", "Owl", "Gopher", "Baloo", "Bagheera", "Mowgli", "Kaa"];
@@ -69,17 +75,21 @@ window.onload = function startGame() {
             var correctGuess = 0;
                 
             // This function is run whenever the user presses a key.
-            document.onkeyup = function(event) {
+            document.onkeypress = function(event) {
 
                 // Determines which key was pressed.
                 //var userGuess = String.fromCharCode(event.which).toLowerCase();
-                var userGuess = event.key;
+                var userGuess = event.key.toLowerCase();
 
                 //assigns the key code to a variable
                 var userKeyCode = Number(event.keyCode);
 
+                if(event.keyCode==229){
+                    event.keyCode=$('#dummy').val().slice($('#dummy').val().length-1,$('#dummy').val().length).toLowerCase().charCodeAt(0);
+                }
+
                 //Make sure key pressed is a letter of the alphabet
-                if (userKeyCode >= 65 && userKeyCode <= 97) {
+                if (userKeyCode >= 65 && userKeyCode <= 122) {
 
                     //Make sure key pressed is not one of the previous guesses
                     if (previousGuess.indexOf(userGuess) >= 0) {
