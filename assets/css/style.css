@@ -184,7 +184,7 @@ p {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 421px) and (max-width: 640px) {
 
     #scb {
         font-size: 30px;
@@ -212,6 +212,77 @@ p {
 
     #backGround {
         background-image: url("../images/YSikR0E-disney-backgrounds_640.png");
+        background-size: cover;
+    }
+
+    #titleBar {
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 0 0 0;
+    }
+    
+    #tbh1 {
+        font-family: 'waltographRegular';
+        font-size:48px;
+        color: #fff;
+        margin: 0px
+    }
+
+    #charImage {
+        max-height: 200px;
+        max-width: 200px;
+    } */
+    
+
+    #ltr0, #ltr1, #ltr2, #ltr3, #ltr4, #ltr5, #ltr6, #ltr7, #ltr8, #ltr9 {
+        font-size: 36px;
+    }
+
+    #ltrsGuessed {
+        padding-top: 5%;
+        margin-left: 0%;
+        font-size: 30px;
+    }
+
+    #start {
+        top: 8%;
+        left: 2%;
+        font-size: 24px;    
+    }
+
+    #row-first {
+        padding-top: 5%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    #scb {
+        font-size: 30px;
+        font-family: 'waltographRegular';
+        margin-top: 0;
+    }
+
+    .pfont {
+        font-size: 18px;
+        font-family: 'waltographRegular';
+        padding-left: 25px;
+    }
+
+    #pltrG {
+        font-size: 30px;
+    }
+
+    #ltrG {
+        font-size: 18px;
+    }
+
+    #start {
+        font-size: 24px;    
+    }
+
+    #backGround {
+        background-image: url("../images/YSikR0E-disney-backgrounds_420.png");
         background-size: cover;
     }
 
